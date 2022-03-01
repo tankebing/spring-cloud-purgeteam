@@ -19,28 +19,6 @@
     <description>SpringCloud Purgeteam Starter</description>
     <url>https://github.com/purgeteam/spirng-cloud-purgeteam</url>
 
-    <!-- 版权许可 -->
-    <licenses>
-        <license>
-            <name>The Apache License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            <distribution>repo</distribution>
-            <comments>A business-friendly OSS license</comments>
-        </license>
-    </licenses>
-
-    <!-- 开发者信息 -->
-    <developers>
-        <developer>
-            <name>purgeyao</name>
-            <email>16621377702@163.com</email>
-            <roles>
-                <role>owner</role>
-            </roles>
-            <timezone>+8</timezone>
-        </developer>
-    </developers>
-
     <!-- 代码库 -->
     <scm>
         <connection>scm:git:git://github.com/purgeteam/spirng-cloud-purgeteam.git</connection>

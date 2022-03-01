@@ -16,7 +16,6 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 /**
  * {@link IgnoreResponseAdvice} 处理解析 {@link ResponseBodyAdvice} 统一返回包装器
  *
- * @author <a href="mailto:yaoonlyi@gmail.com">purgeyao</a>
  * @since 1.0.0
  */
 @RestControllerAdvice
@@ -59,6 +58,8 @@ public class CommonResponseDataAdvice implements ResponseBodyAdvice<Object> {
         }
         // string 特殊处理 java.lang.ClassCastException: Result cannot be cast to java.lang.String
         if (o instanceof String) {
+            //TODO 实现String 类型 原样返回
+            //return o;
             return JSON.toJSON(Result.ofSuccess(o)).toString();
         }
         return Result.ofSuccess(o);

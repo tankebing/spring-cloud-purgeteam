@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ExampleController implements ExampleFeignClient {
 
     @Override
-    @IgnoreResponseAdvice
+    @IgnoreResponseAdvice(errorDispose = false)
     public String test() throws Exception {
         return "test";
     }
