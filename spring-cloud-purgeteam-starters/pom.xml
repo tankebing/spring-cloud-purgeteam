@@ -20,6 +20,7 @@
     <modules>
         <module>unified-dispose-spring-cloud-starter</module>
         <module>swagger-spring-cloud-starter</module>
+        <module>dynamic-datasource-spring-cloud-starter</module>
     </modules>
 
 </project>
